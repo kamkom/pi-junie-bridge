@@ -57,6 +57,7 @@ The list below is mostly in sync with the models Junie itself offers, as publish
 - `openai-gpt-6-astra`
 - `openai-gpt-6-luna`
 - `openai-gpt-6-sol`
+- `openai-gpt-6-1-sol`
 
 **xAI:**
 - `grok-4-3`

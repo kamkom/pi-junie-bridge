@@ -339,6 +339,7 @@ The integer values represent `[maxOutputTokens, maxContextTokens]`. When only on
 | `openai-gpt-6-astra` | null | 1,000,000 | |
 | `openai-gpt-6-luna` | null | 1,000,000 | |
 | `openai-gpt-6-sol` | null | 1,000,000 | |
+| `openai-gpt-6-1-sol` | null | 1,000,000 | Listed on llm24.net; limits assumed same as `gpt-6-sol`, not probed |
 | `openai-gpt-5-5` | null | 1,000,000 | |
 | `openai-gpt-5-4` | null | 1,000,000 | |
 | `openai-gpt-5-4-mini` | null | 1,000,000 | |
@@ -459,6 +460,7 @@ When updating to a new Junie CLI version:
 
 | Bridge update | Junie CLI version | Changes |
 |--------------|-------------------|---------|
+| 2026-09-30 | v3419.7 (release) | Added `openai-gpt-6-1-sol` (Grazie ID `gpt-6.1-sol`, as listed on llm24.net). Not yet probed live; context/output limits copied from `openai-gpt-6-sol`. |
 | 2026-09-28 | v3419.7 (release) | Added `claude-sonnet-5-5`. Not yet in the Junie CLI or on llm24.net, but already served by the Grazie backend — verified live (see *Probing Models Without the JAR*): maxOutput 128,000, maxContext 1,000,000. |
 | 2026-09-23 | v3419.7 (release) | Added `claude-opus-5-5`, `openai-gpt-6-luna`, `openai-gpt-6-sol` (all verified live). Updated `Grazie-Agent` version to 3419.7. |
 | 2026-09-17 | v3013.7 (release) | Added `claude-fable-5-1`, `openai-gpt-6-astra`, `grok-4-6`, `gemini-3.5-flash`, `gemini-3.7-flash`, `gemini-3.8-flash` (all verified live). `gemini-3-pro-preview` is in the JAR but the Google publisher 404s it — not added. Noted that unknown Gemini IDs answer Grazie `400 Unsupported model type` while catalogued-but-dead ones answer a publisher `404`, which makes the two states distinguishable. Updated `Grazie-Agent` version to 3013.7. |
