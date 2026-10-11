@@ -336,6 +336,7 @@ The integer values represent `[maxOutputTokens, maxContextTokens]`. When only on
 | `claude-fable-5` | 128,000 | 1,000,000 | |
 | `claude-fable-5-1` | 128,000 | 1,000,000 | |
 | `claude-haiku-4-5` | 64,000 | 200,000 | Older model, smaller limits |
+| `claude-haiku-5-5` | 64,000 | 200,000 | Listed on llm24.net; limits assumed same as `claude-haiku-4-5`, not probed |
 | `openai-gpt-6-astra` | null | 1,000,000 | |
 | `openai-gpt-6-luna` | null | 1,000,000 | |
 | `openai-gpt-6-sol` | null | 1,000,000 | |
@@ -460,6 +461,7 @@ When updating to a new Junie CLI version:
 
 | Bridge update | Junie CLI version | Changes |
 |--------------|-------------------|---------|
+| 2026-10-11 | v3419.7 (release) | Added `claude-haiku-5-5` (Grazie ID `claude-haiku-5-5`, as listed on llm24.net; passed through as-is). Not yet probed live; context/output limits copied from `claude-haiku-4-5` (200,000 / 64,000). |
 | 2026-09-30 | v3419.7 (release) | Added `openai-gpt-6-1-sol` (Grazie ID `gpt-6.1-sol`, as listed on llm24.net). Not yet probed live; context/output limits copied from `openai-gpt-6-sol`. |
 | 2026-09-28 | v3419.7 (release) | Added `claude-sonnet-5-5`. Not yet in the Junie CLI or on llm24.net, but already served by the Grazie backend — verified live (see *Probing Models Without the JAR*): maxOutput 128,000, maxContext 1,000,000. |
 | 2026-09-23 | v3419.7 (release) | Added `claude-opus-5-5`, `openai-gpt-6-luna`, `openai-gpt-6-sol` (all verified live). Updated `Grazie-Agent` version to 3419.7. |

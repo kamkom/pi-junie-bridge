@@ -46,6 +46,7 @@ The list below is mostly in sync with the models Junie itself offers, as publish
 - `claude-opus-5-5`
 - `claude-fable-5`
 - `claude-fable-5-1`
+- `claude-haiku-5-5`
 
 **OpenAI:**
 - `openai-gpt-5-2`
