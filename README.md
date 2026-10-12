@@ -64,6 +64,7 @@ The list below is mostly in sync with the models Junie itself offers, as publish
 - `grok-4-3`
 - `grok-4-5`
 - `grok-4-6`
+- `grok-4-7`
 
 **Google:**
 - `gemini-3-flash-preview`
