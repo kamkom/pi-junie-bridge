@@ -365,6 +365,7 @@ The integer values represent `[maxOutputTokens, maxContextTokens]`. When only on
 | `gemini-3.6-flash` | null | 1,048,576 | 0.75 / 3.75 |
 | `gemini-3.7-flash` | null | 1,048,576 | 0.4 / 2.4 |
 | `gemini-3.8-flash` | null | 1,048,576 | 0.75 / 3.75 |
+| `gemini-4-argon` | null | 1,048,576 | not probed; limits assumed same as `gemini-3.8-flash` |
 
 Careful when reading `ModelCapabilities` from the bytecode: the **last two ints**
 before the `DefaultConstructorMarker` are Kotlin's synthetic default-argument
@@ -462,6 +463,7 @@ When updating to a new Junie CLI version:
 
 | Bridge update | Junie CLI version | Changes |
 |--------------|-------------------|---------|
+| 2026-10-17 | v3419.7 (release) | Added `gemini-4-argon` (Grazie ID `gemini-4-argon`, as listed on llm24.net; passed through as-is). Not yet probed live; context/output limits copied from `gemini-3.8-flash` (1,048,576 / 65,536). |
 | 2026-10-12 | v3419.7 (release) | Added `grok-4-7` (Grazie ID `grok-4.7`, as listed on llm24.net). Not yet probed live; context/output limits copied from `grok-4-6` (500,000 / 32,768). |
 | 2026-10-11 | v3419.7 (release) | Added `claude-haiku-5-5` (Grazie ID `claude-haiku-5-5`, as listed on llm24.net; passed through as-is). Not yet probed live; context/output limits copied from `claude-haiku-4-5` (200,000 / 64,000). |
 | 2026-09-30 | v3419.7 (release) | Added `openai-gpt-6-1-sol` (Grazie ID `gpt-6.1-sol`, as listed on llm24.net). Not yet probed live; context/output limits copied from `openai-gpt-6-sol`. |

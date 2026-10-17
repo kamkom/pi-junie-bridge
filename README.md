@@ -75,6 +75,7 @@ The list below is mostly in sync with the models Junie itself offers, as publish
 - `gemini-3.6-flash`
 - `gemini-3.7-flash`
 - `gemini-3.8-flash`
+- `gemini-4-argon`
 
 Missing models:
 - **`deepseek-v4-flash`** — not implemented yet. JetBrains routes DeepSeek through a different backend (AliCloud), and every path/header combination tried so far is rejected by the Grazie gateway for subscription OAuth tokens.
