@@ -341,6 +341,7 @@ The integer values represent `[maxOutputTokens, maxContextTokens]`. When only on
 | `openai-gpt-6-luna` | null | 1,000,000 | |
 | `openai-gpt-6-sol` | null | 1,000,000 | |
 | `openai-gpt-6-1-sol` | null | 1,000,000 | Listed on llm24.net; limits assumed same as `gpt-6-sol`, not probed |
+| `openai-gpt-6-1-terra` | null | 1,000,000 | Listed on llm24.net; limits assumed same as `gpt-5-6-terra`, not probed |
 | `openai-gpt-5-5` | null | 1,000,000 | |
 | `openai-gpt-5-4` | null | 1,000,000 | |
 | `openai-gpt-5-4-mini` | null | 1,000,000 | |
@@ -466,6 +467,7 @@ When updating to a new Junie CLI version:
 | 2026-10-17 | v3419.7 (release) | Added `gemini-4-argon` (Grazie ID `gemini-4-argon`, as listed on llm24.net; passed through as-is). Not yet probed live; context/output limits copied from `gemini-3.8-flash` (1,048,576 / 65,536). |
 | 2026-10-12 | v3419.7 (release) | Added `grok-4-7` (Grazie ID `grok-4.7`, as listed on llm24.net). Not yet probed live; context/output limits copied from `grok-4-6` (500,000 / 32,768). |
 | 2026-10-11 | v3419.7 (release) | Added `claude-haiku-5-5` (Grazie ID `claude-haiku-5-5`, as listed on llm24.net; passed through as-is). Not yet probed live; context/output limits copied from `claude-haiku-4-5` (200,000 / 64,000). |
+| 2026-10-29 | v3419.7 (release) | Added `openai-gpt-6-1-terra` (Grazie ID `gpt-6.1-terra`, as listed on llm24.net). Not yet probed live; context/output limits copied from `openai-gpt-5-6-terra`. |
 | 2026-09-30 | v3419.7 (release) | Added `openai-gpt-6-1-sol` (Grazie ID `gpt-6.1-sol`, as listed on llm24.net). Not yet probed live; context/output limits copied from `openai-gpt-6-sol`. |
 | 2026-09-28 | v3419.7 (release) | Added `claude-sonnet-5-5`. Not yet in the Junie CLI or on llm24.net, but already served by the Grazie backend — verified live (see *Probing Models Without the JAR*): maxOutput 128,000, maxContext 1,000,000. |
 | 2026-09-23 | v3419.7 (release) | Added `claude-opus-5-5`, `openai-gpt-6-luna`, `openai-gpt-6-sol` (all verified live). Updated `Grazie-Agent` version to 3419.7. |
