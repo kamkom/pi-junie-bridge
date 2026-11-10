@@ -335,6 +335,7 @@ The integer values represent `[maxOutputTokens, maxContextTokens]`. When only on
 | `claude-opus-4-6` | 128,000 | 1,000,000 | |
 | `claude-fable-5` | 128,000 | 1,000,000 | |
 | `claude-fable-5-1` | 128,000 | 1,000,000 | |
+| `claude-fable-5-2` | 128,000 | 1,000,000 | Listed on llm24.net; limits assumed same as `claude-fable-5-1`, not probed |
 | `claude-haiku-4-5` | 64,000 | 200,000 | Older model, smaller limits |
 | `claude-haiku-5-5` | 64,000 | 200,000 | Listed on llm24.net; limits assumed same as `claude-haiku-4-5`, not probed |
 | `openai-gpt-6-astra` | null | 1,000,000 | |
@@ -464,6 +465,7 @@ When updating to a new Junie CLI version:
 
 | Bridge update | Junie CLI version | Changes |
 |--------------|-------------------|---------|
+| 2026-11-10 | v3419.7 (release) | Added `claude-fable-5-2` (Grazie ID `claude-fable-5-2`, as listed on llm24.net; passed through as-is). Not yet probed live; context/output limits copied from `claude-fable-5-1` (1,000,000 / 128,000). |
 | 2026-10-17 | v3419.7 (release) | Added `gemini-4-argon` (Grazie ID `gemini-4-argon`, as listed on llm24.net; passed through as-is). Not yet probed live; context/output limits copied from `gemini-3.8-flash` (1,048,576 / 65,536). |
 | 2026-10-12 | v3419.7 (release) | Added `grok-4-7` (Grazie ID `grok-4.7`, as listed on llm24.net). Not yet probed live; context/output limits copied from `grok-4-6` (500,000 / 32,768). |
 | 2026-10-11 | v3419.7 (release) | Added `claude-haiku-5-5` (Grazie ID `claude-haiku-5-5`, as listed on llm24.net; passed through as-is). Not yet probed live; context/output limits copied from `claude-haiku-4-5` (200,000 / 64,000). |
