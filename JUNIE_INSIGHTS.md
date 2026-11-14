@@ -369,6 +369,7 @@ The integer values represent `[maxOutputTokens, maxContextTokens]`. When only on
 | `gemini-3.8-flash` | null | 1,048,576 | 0.75 / 3.75 |
 | `gemini-4-argon` | null | 1,048,576 | not probed; limits assumed same as `gemini-3.8-flash` |
 | `gemini-4-carbon` | null | 1,048,576 | not probed; limits assumed same as `gemini-4-argon` |
+| `gemini-4-hydrogen` | null | 1,048,576 | not probed; limits assumed same as `gemini-4-carbon` |
 
 Careful when reading `ModelCapabilities` from the bytecode: the **last two ints**
 before the `DefaultConstructorMarker` are Kotlin's synthetic default-argument
@@ -466,6 +467,7 @@ When updating to a new Junie CLI version:
 
 | Bridge update | Junie CLI version | Changes |
 |--------------|-------------------|---------|
+| 2026-11-14 | v3419.7 (release) | Added `gemini-4-hydrogen` (Grazie ID `gemini-4-hydrogen`, as listed on llm24.net; passed through as-is). Not yet probed live; context/output limits copied from `gemini-4-carbon` (1,048,576 / 65,536). |
 | 2026-11-11 | v3419.7 (release) | Added `gemini-4-carbon` (Grazie ID `gemini-4-carbon`, as listed on llm24.net; passed through as-is). Not yet probed live; context/output limits copied from `gemini-4-argon` (1,048,576 / 65,536). |
 | 2026-11-10 | v3419.7 (release) | Added `claude-fable-5-2` (Grazie ID `claude-fable-5-2`, as listed on llm24.net; passed through as-is). Not yet probed live; context/output limits copied from `claude-fable-5-1` (1,000,000 / 128,000). |
 | 2026-10-17 | v3419.7 (release) | Added `gemini-4-argon` (Grazie ID `gemini-4-argon`, as listed on llm24.net; passed through as-is). Not yet probed live; context/output limits copied from `gemini-3.8-flash` (1,048,576 / 65,536). |
