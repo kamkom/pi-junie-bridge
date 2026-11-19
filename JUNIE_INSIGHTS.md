@@ -343,6 +343,8 @@ The integer values represent `[maxOutputTokens, maxContextTokens]`. When only on
 | `openai-gpt-6-sol` | null | 1,000,000 | |
 | `openai-gpt-6-1-sol` | null | 1,000,000 | Listed on llm24.net; limits assumed same as `gpt-6-sol`, not probed |
 | `openai-gpt-6-1-terra` | null | 1,000,000 | Listed on llm24.net; limits assumed same as `gpt-5-6-terra`, not probed |
+| `openai-gpt-6-2-astra` | null | 1,000,000 | Listed on llm24.net; limits assumed same as `gpt-6-astra`, not probed |
+| `openai-gpt-6-2-sol` | null | 1,000,000 | Listed on llm24.net; limits assumed same as `gpt-6-sol`, not probed |
 | `openai-gpt-5-5` | null | 1,000,000 | |
 | `openai-gpt-5-4` | null | 1,000,000 | |
 | `openai-gpt-5-4-mini` | null | 1,000,000 | |
@@ -467,6 +469,7 @@ When updating to a new Junie CLI version:
 
 | Bridge update | Junie CLI version | Changes |
 |--------------|-------------------|---------|
+| 2026-11-19 | v3419.7 (release) | Added `openai-gpt-6-2-astra` and `openai-gpt-6-2-sol` (Grazie IDs `gpt-6.2-astra` and `gpt-6.2-sol`, as listed on llm24.net). Not yet probed live; context/output limits copied from `openai-gpt-6-astra` and `openai-gpt-6-sol` respectively. |
 | 2026-11-14 | v3419.7 (release) | Added `gemini-4-hydrogen` (Grazie ID `gemini-4-hydrogen`, as listed on llm24.net; passed through as-is). Not yet probed live; context/output limits copied from `gemini-4-carbon` (1,048,576 / 65,536). |
 | 2026-11-11 | v3419.7 (release) | Added `gemini-4-carbon` (Grazie ID `gemini-4-carbon`, as listed on llm24.net; passed through as-is). Not yet probed live; context/output limits copied from `gemini-4-argon` (1,048,576 / 65,536). |
 | 2026-11-10 | v3419.7 (release) | Added `claude-fable-5-2` (Grazie ID `claude-fable-5-2`, as listed on llm24.net; passed through as-is). Not yet probed live; context/output limits copied from `claude-fable-5-1` (1,000,000 / 128,000). |
