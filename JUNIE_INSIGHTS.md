@@ -372,6 +372,7 @@ The integer values represent `[maxOutputTokens, maxContextTokens]`. When only on
 | `gemini-4-argon` | null | 1,048,576 | not probed; limits assumed same as `gemini-3.8-flash` |
 | `gemini-4-carbon` | null | 1,048,576 | not probed; limits assumed same as `gemini-4-argon` |
 | `gemini-4-hydrogen` | null | 1,048,576 | not probed; limits assumed same as `gemini-4-carbon` |
+| `gemini-4-neon` | null | 1,048,576 | not probed; limits assumed same as `gemini-4-hydrogen` |
 
 Careful when reading `ModelCapabilities` from the bytecode: the **last two ints**
 before the `DefaultConstructorMarker` are Kotlin's synthetic default-argument
@@ -469,6 +470,7 @@ When updating to a new Junie CLI version:
 
 | Bridge update | Junie CLI version | Changes |
 |--------------|-------------------|---------|
+| 2026-11-20 | v3419.7 (release) | Added `gemini-4-neon` (Grazie ID `gemini-4-neon`, as listed on llm24.net; passed through as-is). Not yet probed live; context/output limits copied from `gemini-4-hydrogen` (1,048,576 / 65,536). |
 | 2026-11-19 | v3419.7 (release) | Added `openai-gpt-6-2-astra` and `openai-gpt-6-2-sol` (Grazie IDs `gpt-6.2-astra` and `gpt-6.2-sol`, as listed on llm24.net). Not yet probed live; context/output limits copied from `openai-gpt-6-astra` and `openai-gpt-6-sol` respectively. |
 | 2026-11-14 | v3419.7 (release) | Added `gemini-4-hydrogen` (Grazie ID `gemini-4-hydrogen`, as listed on llm24.net; passed through as-is). Not yet probed live; context/output limits copied from `gemini-4-carbon` (1,048,576 / 65,536). |
 | 2026-11-11 | v3419.7 (release) | Added `gemini-4-carbon` (Grazie ID `gemini-4-carbon`, as listed on llm24.net; passed through as-is). Not yet probed live; context/output limits copied from `gemini-4-argon` (1,048,576 / 65,536). |
